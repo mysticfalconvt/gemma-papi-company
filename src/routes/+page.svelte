@@ -29,6 +29,8 @@
 		We are doing a special 1 day only lemonade sale!
 		<div class="text-md w-min rounded-md border-2 border-yellow-200 p-1">February 28th!!</div>
 		$1.00
+		<br />
+		Mark Twain Ln, Rotunda Florida
 	</div>
 	<AudioDisplay />
 	<Card cardData={cards} />
