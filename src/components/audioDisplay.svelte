@@ -13,6 +13,7 @@
 
 	async function setupMicrophone() {
 		try {
+			if (typeof window === 'undefined') return;
 			const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
 			audioContext = new window.AudioContext();
 			analyser = audioContext.createAnalyser();
