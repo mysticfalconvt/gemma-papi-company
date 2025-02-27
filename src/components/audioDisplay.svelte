@@ -87,6 +87,7 @@
 	});
 
 	onDestroy(() => {
+		if (typeof window === 'undefined') return;
 		if (audioContext) {
 			audioContext.close();
 		}
