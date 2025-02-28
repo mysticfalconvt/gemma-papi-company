@@ -1,6 +1,7 @@
 <script lang="ts">
 	import AudioDisplay from '../components/audioDisplay.svelte';
 	import Card from '../components/card.svelte';
+	const standImage = '%sveltekit.assets%/stand.jpg';
 
 	let message = 'Welcome to The Gemma and Papi World Company!';
 
@@ -32,6 +33,11 @@
 		<br />
 		Mark Twain Ln, Rotunda Florida
 	</div>
+	<img
+		src="/stand.jpg"
+		alt="The Gemma and Papi World Company Lemonade Stand in Rotunda Florida"
+		width={400}
+	/>
 	<AudioDisplay />
 	<Card cardData={cards} />
 </div>
